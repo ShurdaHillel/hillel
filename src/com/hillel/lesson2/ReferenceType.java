@@ -1,4 +1,4 @@
-package com.hillel.task2;
+package com.hillel.lesson2;
 
 public class ReferenceType {
     public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class ReferenceType {
 
         int x = 45;
         int y = 5;
-//Ctrl+Alt+V
+        //Ctrl+Alt+V
         int sum = x + y;
         int sub = x - y;
         int mul = x * y;
@@ -29,12 +29,11 @@ public class ReferenceType {
         System.out.println("x-y=" + sub);
         System.out.println("x*y=" + mul);
         System.out.println("x/y=" + div);
-//2 Ctrl + Arrow down
+        //2 Ctrl + Arrow down
         System.out.println(" ***    *   *       *   *  ");
         System.out.println("    *  * *   *     *   * * ");
         System.out.println("    * *   *   *   *   *   *");
         System.out.println("*   * *****    * *    *****");
         System.out.println(" ***  *   *     *     *   *");
-
     }
 }

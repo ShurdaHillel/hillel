@@ -1,9 +1,9 @@
-package com.hillel.task1;
+package com.hillel.lesson1;
 
 public class HelloWorld {
 
     public static void main(String[] args) {
 
-        System.out.println("Helloorld");
+        System.out.println("HelloWorld");
     }
 }

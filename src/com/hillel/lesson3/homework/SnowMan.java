@@ -21,9 +21,6 @@ public class SnowMan {
         int minLimit = scanner.nextInt();
         System.out.print("Enter max limit: ");
         int maxLimit = scanner.nextInt();
-        // 0.0 < x < 1.0
-        // 20 < x < 80  delta 60
-//        79.5 ~ 80
 //        int random = minLimit + Math.round(Math.random() * (maxLimit - minLimit));
         int random = minLimit + (int)(Math.random() * (maxLimit - minLimit + 1));
 

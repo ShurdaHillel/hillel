@@ -1,12 +1,13 @@
-package com.hillel.lesson4;
+package com.hillel.lesson4.homework;
 
 public class ZooRecursion {
     public static void main(String[] args) {
         int bearsGrizli = 20;
         int increaseBears = 80;
 
-        int animalsNextYear = countAnimalsNextYear(bearsGrizli, increaseBears, "bears");
-        System.out.printf("Count animals next year %s", animalsNextYear);
+        int bearsNextYear = countAnimalsNextYear(bearsGrizli, increaseBears, "bears");
+        int tigersNextYear = countAnimalsNextYear(20, 15, "tigers");
+        System.out.printf("Count animals next year %s", bearsNextYear);
         System.out.println();
         int countAnimalsTenYear = countAnimalsNextYear(bearsGrizli, increaseBears, 3);
         System.out.printf("Count animals next 10 years %s", countAnimalsTenYear);

@@ -6,10 +6,6 @@ import java.util.Random;
 
 public class ArraySorts {
     public static void main(String[] args) {
-
-//        Створити масив та відсортувати першу половину масиву від меншого до більшого, а другу від більшого до меншого.
-//        Вивести на екран результат.
-
         Random random = new Random();
 
         Integer[] array = new Integer[10];

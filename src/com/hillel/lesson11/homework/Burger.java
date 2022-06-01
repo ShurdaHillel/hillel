@@ -6,7 +6,7 @@ public class Burger {
     int meat;
     int salad;
 
-    public static final int DISCOUNT = 10;
+    private static final int DISCOUNT_BURGER = 10;
 
     {
         System.out.println("Non static initialization");

@@ -1,6 +1,6 @@
 package com.hillel.lesson11.homework;
 
-public final class CheeseBurger extends Burger{
+public final class CheeseBurger extends Burger {
     int cheese = 1;
 
     public CheeseBurger(int bun, int meat, int salad, int cheese) {
@@ -8,10 +8,15 @@ public final class CheeseBurger extends Burger{
         this.cheese = cheese;
     }
 
+    public CheeseBurger(Burger burger) {
+        super(burger.bun, burger.meat, burger.salad);
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
 
         CheeseBurger that = (CheeseBurger) o;
 
@@ -20,7 +25,9 @@ public final class CheeseBurger extends Burger{
 
     @Override
     public int hashCode() {
-        return cheese;
+        int result = super.hashCode();
+        result = 31 * result + cheese;
+        return result;
     }
 
     @Override

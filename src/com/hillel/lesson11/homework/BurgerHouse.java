@@ -6,9 +6,12 @@ public class BurgerHouse {
     public static void main(String[] args) {
 
         Burger burgerRegular = new Burger(1, 1, 1);
+        CheeseBurger cheeseBurger3 = new CheeseBurger(burgerRegular);
+        System.out.println("cheeseBurger3: " + cheeseBurger3);
+
         Burger burgerVegan = new VeganBurger(1, 1, 1, 1);
         Burger cheeseBurger1 =  new CheeseBurger(1, 1, 1, 1);
-        Burger cheeseBurger2 =  new CheeseBurger(1, 1, 1, 1);
+        Burger cheeseBurger2 =  new CheeseBurger(1, 1, 2, 1);
         cheeseBurger1.order();
         System.out.println("Is cheeseBurger the same: " + cheeseBurger1.equals(cheeseBurger2));
 

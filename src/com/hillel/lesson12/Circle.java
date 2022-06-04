@@ -1,6 +1,8 @@
 package com.hillel.lesson12;
 
-public class Circle extends Shape{
+import com.hillel.lesson13.Maker;
+
+public class Circle extends Shape implements Maker {
     private double radius;
 
     public Circle(double radius) {
@@ -33,5 +35,10 @@ public class Circle extends Shape{
                 "radius=" + radius +
                 "color=" + getColor() +
                 '}';
+    }
+
+    @Override
+    public void make() {
+        System.out.println("Make circle");
     }
 }

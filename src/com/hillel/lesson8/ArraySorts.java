@@ -26,14 +26,13 @@ public class ArraySorts {
         Arrays.sort(array, 0, array.length / 2);
         Arrays.sort(array, array.length / 2, array.length, Collections.reverseOrder());
 
-        System.out.println("After reverse sorting: " + Arrays.toString(array));
 
         printElements(2, 3, 4);
         printElements(2);
         printElements(2, 8, 5, 10);
 
         Integer[] firstPart = Arrays.copyOf(array, 4);
-        System.out.println("Copy from begining: " + Arrays.toString(firstPart));
+        System.out.println("Copy from beginning: " + Arrays.toString(firstPart));
 
         Integer[] middlePart = Arrays.copyOfRange(array, 4, 8);
         System.out.println("Copy from middle: " + Arrays.toString(middlePart));
@@ -60,13 +59,11 @@ public class ArraySorts {
         for (int i = 0; i < array.length; i++) {
             for (int j = 1; j < array.length - i; j++) {
                 if (array[j - 1] > array[j]) {
-//                    System.out.print("i=" + i + " j=" + j + " ");
                     buffer = array[j - 1];
                     array[j - 1] = array[j];
                     array[j] = buffer;
                 }
             }
-//            System.out.println();
         }
     }
 }
